@@ -118,7 +118,7 @@ banner: /thumbnails/helloworld.jpg
 ```
 the root of image-url is source dir
 
-**Enable or Disable comment for a article
+**Enable or Disable comment for a article**
 
 add `comments: true` in the head of article md file
 
