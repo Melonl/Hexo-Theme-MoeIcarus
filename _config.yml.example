@@ -76,6 +76,7 @@ plugins:
   busuanzi_analytics: true # optionis true, false
   hitokoto: true # options true, false
   chuncai: true # options true, false
+  moebackground: false #options true, false
   aplayer:
     enable: true # optionis true, false
     options: {

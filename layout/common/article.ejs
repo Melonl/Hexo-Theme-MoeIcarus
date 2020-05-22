@@ -1,6 +1,6 @@
 <article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %><%= (post.direction && post.direction.toLowerCase() === 'rtl' ? ' rtl' : '') %>" itemscope itemprop="blogPost">
   <div class="article-inner">
-    <% if (is_post()) { %>
+    <% if (theme.plugins.moebackground && is_post()) { %>
       <div class="background"></div>
       <script>
         ;!(function($) {

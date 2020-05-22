@@ -69,6 +69,15 @@ plugins:
   chuncai: true # optionis true, false
 ```
 
+**Enable or Disable moe-background plugin**
+
+Edit the theme `_config.yml` file:
+
+``` yaml
+plugins:
+  moebackground: true # optionis true, false
+```
+
 **Enable or Disable APlayer plugin**
 
 Edit the theme `_config.yml` file:
@@ -111,6 +120,9 @@ the root of image-url is source dir
 
 
 ## ChangeLog
+
+**2020-5-22**
+* Added a switch to control moe-background in article detail page
 
 **2017-08-16**
 * Added apple touch icon
