@@ -123,6 +123,8 @@ the root of image-url is source dir
 
 **2020-5-22**
 * Added a switch to control moe-background in article detail page
+* Added Valine comment plugin as the only comment plugin
+* Removed all other comment plugins because most of them are hard to use
 
 **2017-08-16**
 * Added apple touch icon
