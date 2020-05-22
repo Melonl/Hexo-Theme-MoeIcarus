@@ -1,46 +1,19 @@
 # Hexo-Theme-MoeIcarus
 
-> ✨ Make Icarus theme cute!!!
+> ✨ My custom of MoeIcarus
 
 [![Build Status](https://travis-ci.org/MoeFE/Hexo-Theme-MoeIcarus.svg?branch=master)](https://travis-ci.org/MoeFE/Hexo-Theme-MoeIcarus)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Preview
 
-![preview](https://raw.githubusercontent.com/MoeFE/Hexo-Theme-MoeIcarus/master/preview.png)
+![preview](https://raw.githubusercontent.com/Melonl/Hexo-Theme-MoeIcarus/master/preview.png)
 
 ## Demo
 
-[Live Example](https://quq.cat)
-
-## New features
-
-* Optimizing page title and subtitle display.
-* You can configure the use of rounded avatar.
-* You can configuration navigation bar to be fixed at the top.
-* The profile panel can be configured with bio.
-* External resources are loaded using CDN.
-* Added the amount of reading of the statistical articles of the [busuanzi](http://busuanzi.ibruce.info/) statistics plugin.
-* Added [hitokoto](http://hitokoto.cn/) plugin, Show a lovely word.
-* Added [chuncai](https://github.com/shalldie/chuncai) plugin, A lovely Page Wizard, is responsible for selling moe.
-* Added [APlayer](https://github.com/MoePlayer/APlayer) plugin, A beautiful HTML5 music player.
-* Added [Do-you-like-me](https://github.com/DIYgod/Do-you-like-me) plugin, A very creative point of praise plugin.
-* Added the [NProgress](https://github.com/rstacruz/nprogress) plugin to display the page load status.
-* The article page randomly adds a lovely background image.
-* Add interesting title changes, Creative comes from https://www.anotherhome.net
-* Update a very cute mouse style.
-* Added some effect.
-* Optimize the style of the reference block.
-* The mobile side hides the search input box.
-* Optimize some of the details.
+NULL
 
 ## Usage
-
-Clone this project into your hexo blog theme directory: 
-
-``` shell
-git clone git@github.com:MoeFE/Hexo-Theme-MoeIcarus.git </path/to/themes/MoeIcarus>
-```
 
 Edit the site `_config.yml` file:
 
@@ -125,6 +98,17 @@ plugins:
   do_you_like_me: true # optionis true, false
 ```
 
+**Use banner image in article detail page**
+
+add `banner: image-url` to md file of article, like this:
+```
+---
+title: Hello World
+banner: /thumbnails/helloworld.jpg
+---
+```
+
+
 ## ChangeLog
 
 **2017-08-16**
@@ -167,5 +151,5 @@ plugins:
 
 ## LICENSE
 
-[MIT](https://github.com/MoeFE/Hexo-Theme-MoeIcarus/blob/master/LICENSE)
+[MIT](https://github.com/Melonl/Hexo-Theme-MoeIcarus/blob/master/LICENSE)
 
