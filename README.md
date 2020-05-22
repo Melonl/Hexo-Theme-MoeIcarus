@@ -107,6 +107,7 @@ title: Hello World
 banner: /thumbnails/helloworld.jpg
 ---
 ```
+the root of image-url is source dir
 
 
 ## ChangeLog
