@@ -38,10 +38,12 @@
   color: color-default
   text-decoration: none
   line-height: line-height-title
+  transition: 0.2s color
   a&:visited
     color: color-grey
   a&:hover
     color: color-link
+    transition: 0.2s color
   @media mq-mini
     font-size: 1.6em
   @media mq-mobile
@@ -58,8 +60,10 @@
       margin-right: 3px
   a
     color: color-default
+    transition: 0.25s color
     &:hover
       color: color-link
+      transition: 0.25s color
 
 .article-category
   .fa-angle-right
@@ -95,8 +99,10 @@
   a
     color: color-link
     text-decoration: none
+    transition: 0.25s color
     &:hover
-      text-decoration: underline
+      color: color-grey
+      transition: 0.25s color
   ul, ol, dl
     margin-top: line-height
     margin-bottom: line-height
