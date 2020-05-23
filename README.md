@@ -126,7 +126,7 @@ add `comments: true` in the head of article md file
 ## ChangeLog
 
 **2020-5-22**
-* Added a switch to control moe-background in article detail page
+* Added a switch to control moe-background of article detail page
 * Added Valine comment plugin as the only comment plugin
 * Removed all other comment plugins because most of them are hard to use
 
