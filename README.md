@@ -1,6 +1,6 @@
 # Hexo-Theme-MoeIcarus
 
-> ✨ My custom of MoeIcarus
+> ✨ My custom MoeIcarus
 
 [![Build Status](https://travis-ci.org/MoeFE/Hexo-Theme-MoeIcarus.svg?branch=master)](https://travis-ci.org/MoeFE/Hexo-Theme-MoeIcarus)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
