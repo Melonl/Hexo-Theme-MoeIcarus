@@ -40,7 +40,7 @@
   line-height: line-height-title
   transition: 0.2s color
   a&:visited
-    color: color-grey
+    color: color-default
   a&:hover
     color: color-link
     transition: 0.2s color
@@ -195,11 +195,14 @@
   border-top: 1px solid color-border
   padding-top: line-height
   margin: 0 article-padding article-padding
+  transition: 0.25s color
   a
     color: color-grey
     text-decoration: none
+    transition: 0.25s color
     &:hover
       color: color-default
+      transition: 0.25s color
 
 .article-comment-link
   float: right
