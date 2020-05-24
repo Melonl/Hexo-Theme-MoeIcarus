@@ -125,6 +125,12 @@ add `comments: true` in the head of article md file
 
 ## ChangeLog
 
+**2020-5-24**
+* Beautified To-top button style
+
+**2020-5-23**
+* Beautified some styles about text
+
 **2020-5-22**
 * Added a switch to control moe-background of article detail page
 * Added Valine comment plugin as the only comment plugin
@@ -135,7 +141,7 @@ add `comments: true` in the head of article md file
 
 **2017-08-15**
 * Fixed some bug
-* Update a very cute mouse style
+* Updated a very cute mouse style
 
 **2017-08-14**
 * Added some effect
@@ -143,24 +149,24 @@ add `comments: true` in the head of article md file
 * Added the [NProgress](https://github.com/rstacruz/nprogress) plugin to display the page load status
 * Added the [APlayer](https://github.com/MoePlayer/APlayer) plugin, A beautiful HTML5 music player
 * Added the [Do-you-like-me](https://github.com/DIYgod/Do-you-like-me) plugin, A very creative point of praise plugin
-* Add interesting title changes, Creative comes from https://www.anotherhome.net
-* The article page randomly adds a lovely background image
+* Added interesting title changes, Creative comes from https://www.anotherhome.net
+* Added randomly lovely background image in article page
 
 **2017-08-11**
 * Added the amount of reading of the statistical articles of the [busuanzi](http://busuanzi.ibruce.info/) statistics plugin
 * Added [hitokoto](http://hitokoto.cn/) plugin, Show a lovely word
 
 **2017-08-10**
-* External resources are loaded using CDN
-* Optimize style details
+* Added CDN for external resources loading 
+* Optimized style details
 * Added Profile Bio configuration support
 * Added fixed navigation configuration support
 * Added rounded avatar configuration support
 
 **2017-08-09**
-* Optimizing page title and subtitle display
+* Optimized page title and subtitle display
 * Added ESLint and fix code
-* Beautify the code
+* Beautified the code
 
 ## About
 
