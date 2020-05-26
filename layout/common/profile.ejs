@@ -20,39 +20,39 @@
         <span><%= (tagCount > 1 ? __('profile.tags') : __('profile.tag')) %></span>
       </div>
     </div>
-      <% if(theme.customize.social_links) { %>
-      <div class="profile-block social-links">
-        <table>
-          <tr>
-            <% var tooltipClass = theme.customize.social_link_tooltip === false ? '' : 'class=tooltip'; %>
-            <% for(var i in theme.customize.social_links) { %>
-            <td>
-              <a href="<%- url_for(theme.customize.social_links[i]) %>" target="_blank" title="<%= i %>" <%= tooltipClass %> >
-                <i class="fa fa-<%= i %>"></i>
-              </a>
-            </td>
-            <% } %>
-          </tr>
-        </table>
-      </div>
-      <% } %>
+    <% if(theme.customize.social_links) { %>
+    <div class="profile-block social-links">
+      <table>
+        <tr>
+          <% var tooltipClass = theme.customize.social_link_tooltip === false ? '' : 'class=tooltip'; %>
+          <% for(var i in theme.customize.social_links) { %>
+          <td>
+            <a href="<%- url_for(theme.customize.social_links[i]) %>" target="_blank" title="<%= i %>" <%= tooltipClass %> >
+              <i class="fa fa-<%= i %>"></i>
+            </a>
+          </td>
+          <% } %>
+        </tr>
+      </table>
+    </div>
+    <% } %>
   </div>
   <% if (theme.plugins.do_you_like_me) { %>
-    <div class='like-vote'>
-      <p class='like-title shake-constant shake-slow'>Do you like me?</p>
-      <div class='like-count'>
-        <i class="demo-icon icon-heart throb"></i><span>0</span>
-      </div>
+  <div class='like-vote'>
+    <p class='like-title shake-constant shake-slow'>Do you like me?</p>
+    <div class='like-count'>
+      <i class="demo-icon icon-heart throb"></i><span>0</span>
     </div>
+  </div>
   <% } %>
   <% if (theme.plugins.aplayer.enable) { %>
-    <div id="aplayer" class="aplayer"></div>
-    <script>
-      $(function() {
-        var data = JSON.parse('<%- JSON.stringify(theme.plugins.aplayer) %>');
-        data.options.element = document.querySelector('#aplayer');
-        var ap = new APlayer(data.options);
-      })
-    </script>
+  <div id="aplayer" class="aplayer"></div>
+  <script>
+    $(function() {
+      var data = JSON.parse('<%- JSON.stringify(theme.plugins.aplayer) %>');
+      data.options.element = document.querySelector('#aplayer');
+      var ap = new APlayer(data.options);
+    })
+  </script>
   <% } %>
 </aside>
