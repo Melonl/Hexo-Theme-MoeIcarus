@@ -22,7 +22,9 @@ customize:
     location: Shanghai, China
     bio: I maybe bad,but i feel good.
     follow: https://github.com/u3u/
-  highlight: tomorrow
+  highlight: 
+    enabled: true
+    theme: atom-one-light # refer to https://github.com/highlightjs/highlight.js/tree/master/src/styles
   sidebar: right # sidebar position, options: left, right or leave it empty
   thumbnail: true # enable posts thumbnail, options: true, false
   favicon: //avatars1.githubusercontent.com/u/20062482?v=4&s=40 # path to favicon
