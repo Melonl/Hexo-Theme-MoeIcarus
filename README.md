@@ -27,7 +27,7 @@ Merge the _source folder in the theme and the _source folder in the root directo
 
 **Fillet avatar**
 
-eidt `source/css/_variables.styl`
+Edit `source/css/_variables.styl`
 
 ```ini
 use-radius-avatar = true
@@ -35,7 +35,7 @@ use-radius-avatar = true
 
 **Fixed navigation**
 
-eidt `source/css/_variables.styl`
+Edit `source/css/_variables.styl`
 
 ```ini
 use-fixed-nav = true
@@ -109,7 +109,7 @@ plugins:
 
 **Use banner image in article detail page**
 
-add `banner: image-url` to md file of article, like this:
+Add `banner: image-url` to md file of article, like this:
 ```
 ---
 title: Hello World
@@ -120,10 +120,38 @@ the root of image-url is source dir
 
 **Enable or Disable comment for a article**
 
-add `comments: true` in the head of article md file
+Add `comments: true` in the head of article md file
 
+**Enable highlight.js or change highlight style**
+
+To use highlight.js, you must first disabled hexo's highlight.
+
+Edit hexo's `_config.yml` :
+
+```
+highlight:
+  enable: false
+  line_number: false
+  auto_detect: false
+  tab_replace: ''
+  wrap: false
+  hljs: false
+```
+
+And then, edit theme's `_config.yml` :
+
+```
+  highlight: 
+    enabled: true
+    theme: atom-one-light
+```
+theme styles refer to https://github.com/highlightjs/highlight.js/tree/master/src/styles
 
 ## ChangeLog
+
+**2020-6-25**
+* Added highlight.js to highlight code
+* Removed old highlight css files
 
 **2020-5-24**
 * Beautified To-top button style
