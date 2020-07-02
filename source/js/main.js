@@ -79,5 +79,5 @@
       document.title = title
     }, 2000)
   })
+  */
 })(jQuery)
-*/
