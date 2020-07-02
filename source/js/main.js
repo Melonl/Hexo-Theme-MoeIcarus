@@ -62,6 +62,7 @@
     })
   }
 
+/* browser tab title effect
   // visibilitychange
   var link = $('link[rel="icon"]')
   var title = document.title
@@ -79,3 +80,4 @@
     }, 2000)
   })
 })(jQuery)
+*/

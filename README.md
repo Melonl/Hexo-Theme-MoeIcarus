@@ -147,6 +147,33 @@ And then, edit theme's `_config.yml` :
 ```
 theme styles refer to https://github.com/highlightjs/highlight.js/tree/master/src/styles
 
+**Enable browser tab title trick**
+
+Browser tab title trick is commented out by default.
+
+If you want to enable it, open `MoeIcarus\source\js\main.js` and uncomment the code:
+```
+/* browser tab title effect
+  // visibilitychange
+  var link = $('link[rel="icon"]')
+  var title = document.title
+  var map = {
+    0: { icon: link.attr('href'), title: '(/≧▽≦/)咦！又好了！' + title },
+    1: { icon: '//www.anotherhome.net/wp-content/themes/Amativeness/fail.ico', title: '(●—●)喔哟，崩溃啦！' }
+  }
+  $(window).on('visibilitychange', function () {
+    var data = map[+document.hidden]
+    link.attr('href', data.icon)
+    document.title = data.title
+    setTimeout(function () {
+      if (document.hidden) return
+      document.title = title
+    }, 2000)
+  })
+})(jQuery)
+*/
+```
+
 ## ChangeLog
 
 **2020-6-25**
