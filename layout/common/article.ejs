@@ -39,7 +39,7 @@
           <%- toc(post.content) %>
         </div>
       <% } %>
-      <%- post.content %>
+      <%- post.more %>
     <% } %>
     </div>
     <footer class="article-footer">
@@ -51,7 +51,7 @@
       <% } %>
       <% if (index && theme.comment.valine.enable && theme.comment.valine.showcount) { %>
         <a href="<%= post.permalink %>" id="busuanzi_container_page_pv">
-          <i class="fa fa-comment-o"></i> 评论: <span class="valine-comment-count" data-xid="<%= post.permalink %>">0</span>
+          <i class="fa fa-comment-o"></i> 评论: <span class="valine-comment-count" data-xid="<%= url_for(post.path) %>">0</span>
         </a>
       <% } %>
       <%- partial('share/index', { post: post }) %>
