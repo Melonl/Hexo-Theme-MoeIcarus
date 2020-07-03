@@ -43,15 +43,22 @@
     <% } %>
     </div>
     <footer class="article-footer">
-      <% if (theme.plugins.busuanzi_analytics && is_post()) { %>
+      <% if (index && theme.plugins.busuanzi_analytics) { %>
         <a href="<%= post.permalink %>" id="busuanzi_container_page_pv">
-          <i class="fa fa-eye"></i> 阅读: <span id="busuanzi_value_page_pv">0</span>
+          <i class="fa fa-bar-chart"></i> 阅读: <span id="busuanzi_value_page_pv">0</span>
+        </a>
+        <span>&nbsp;&nbsp;</span>
+      <% } %>
+      <% if (index && theme.comment.valine.enable && theme.comment.valine.showcount) { %>
+        <a href="<%= post.permalink %>" id="busuanzi_container_page_pv">
+          <i class="fa fa-comment-o"></i> 评论: <span class="valine-comment-count" data-xid="<%= post.permalink %>">0</span>
         </a>
       <% } %>
       <%- partial('share/index', { post: post }) %>
-      <%- partial('comment/counter', { post: post }) %>
     </footer>
   </div>
+    
+
   <% if (!index) { %>
   <%- partial('comment/index') %>
 <% } %>

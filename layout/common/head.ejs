@@ -76,7 +76,6 @@
       </script>  
   <% } %>
 
-
   <script>
     $(function() {
       // Init ScrollReveal Animate
@@ -93,4 +92,20 @@
   </script>
   <%- partial('plugin/scripts', { isHead: true }) %>
   <meta name="google-site-verification" content="uezt49H5sqfV0tYxZZrHa8E861CiReOqREgf7fa7CcY" />
+
+  <% if (theme.comment.valine.enable && theme.comment.valine.showcount) { %>
+    <!--Leancloud 操作库:-->
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <!--Valine 的核心代码库:-->
+    <script src="https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js"></script>
+    <script>
+        new Valine({
+            av: AV, 
+            el: '.comment',
+            app_id: '<%= theme.comment.valine.appid %>', // 这里填写上面得到的APP ID
+            app_key: '<%= theme.comment.valine.appkey %>', // 这里填写上面得到的APP KEY
+            placeholder: '<%= theme.comment.valine.placeholder %>' // [v1.0.7 new]留言框占位提示文字
+        });
+    </script>
+    <% } %>
 </head>
