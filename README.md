@@ -170,11 +170,15 @@ If you want to enable it, open `MoeIcarus\source\js\main.js` and uncomment the c
       document.title = title
     }, 2000)
   })
+  */
 })(jQuery)
-*/
+
 ```
 
 ## ChangeLog
+
+**2020-07-09**
+* Added left-floating sticky toc card by a indirect way
 
 **2020-6-25**
 * Added highlight.js to highlight code

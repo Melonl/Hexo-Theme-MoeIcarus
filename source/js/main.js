@@ -80,4 +80,19 @@
     }, 2000)
   })
   */
+
+  
+  
+  //set profile height
+  $(window).on("load",function(){
+    //check media query
+  var mq_mobile = window.matchMedia('screen and (min-width: 560px) and (max-width: 799px)');
+  var mq_mini = window.matchMedia('screen and (max-width: 559px)');
+  var mq_tablet = window.matchMedia('(min-width: 800px) and (max-width: 1199px)');
+  if(mq_mini.matches || mq_mobile.matches || mq_tablet.matches)return;
+    //console.log("mq-mini:" + mq_mini.matches + "mq-mobile:" + mq_mobile.matches);
+    console.log("jq onload");
+    $("#profile").height($("#outer").height());
+  });
+
 })(jQuery)

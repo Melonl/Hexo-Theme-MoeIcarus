@@ -38,12 +38,26 @@
         <strong class="toc-title"><%= __('article.catalogue') %></strong>
           <%- toc(post.content) %>
         </div>
+        <script type="text/javascript">
+          //check media query
+          function a(){
+          var mq_mobile = window.matchMedia('(min-width: 560px) and (max-width: 799px)');
+          var mq_mini = window.matchMedia('(max-width: 559px)');
+          var mq_tablet = window.matchMedia('(min-width: 800px) and (max-width: 1199px)');
+          if(mq_mini.matches || mq_mobile.matches || mq_tablet.matches)return;
+  
+          $(".toc-card").html($("#toc").html());
+          $("#toc").remove();
+          $(".toc-card").css("display","block");
+        };
+        a();
+        </script>
       <% } %>
       <%- post.more %>
     <% } %>
     </div>
     <footer class="article-footer">
-      <% if (index && theme.plugins.busuanzi_analytics) { %>
+      <% if (!index && theme.plugins.busuanzi_analytics) { %>
         <a href="<%= post.permalink %>" id="busuanzi_container_page_pv">
           <i class="fa fa-bar-chart"></i> 阅读: <span id="busuanzi_value_page_pv">0</span>
         </a>

@@ -19,14 +19,28 @@
     border-bottom: none
 
 #profile
+  @media mq-mini
+    background-color rgba(255,255,255,profile-opacity)
+    -webkit-backdrop-filter: blur(profile-backdrop-filter-blur) saturate(profile-backdrop-filter-saturate)
+    backdrop-filter: blur(profile-backdrop-filter-blur)  saturate(profile-backdrop-filter-saturate)
+  @media mq-mobile
+    background-color rgba(255,255,255,profile-opacity)
+    -webkit-backdrop-filter: blur(profile-backdrop-filter-blur) saturate(profile-backdrop-filter-saturate)
+    backdrop-filter: blur(profile-backdrop-filter-blur)  saturate(profile-backdrop-filter-saturate)
   column(profile-column)
   display: none
   @media mq-normal
     display: block
+  &:after
+    clear: both
   .inner
     @extend $block
     margin-top: block-margin
-    background: white
+    background-color #fff
+    @media mq-mini
+      background-color transparent
+    @media mq-mobile
+      background-color transparent
     .base-info
       #avatar
         display: block
@@ -136,10 +150,17 @@
       position: relative
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
       margin-top: 0
-      background: rgba(255, 255, 255, profile-opacity)
+      background-color #fff
+      @media mq-mini
+        background-color transparent
+      @media mq-mobile
+        background-color transparent
       > div
-        -webkit-backdrop-filter: blur(profile-backdrop-filter-blur) saturate(profile-backdrop-filter-saturate)
-        backdrop-filter: blur(profile-backdrop-filter-blur) 
+        background-color #fff
+        @media mq-mini
+          background-color transparent
+        @media mq-mobile
+          background-color transparent
       &:before, &:after
         z-index: 1
         content: ''

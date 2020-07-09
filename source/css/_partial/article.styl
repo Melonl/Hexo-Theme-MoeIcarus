@@ -378,13 +378,43 @@ $article-share-link
       max-width: 100%
       margin: 0 auto
 
+/*new topic card*/
+.toc-card
+  background: #fff
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05)
+  margin 16px 0
+  position sticky;
+  top 80px
+  padding 20px 20px
+  line-height 1.4rem
+  .toc-link
+    color #565a5f
+    transition all .3s
+    &:hover
+      color #49c8fb
+      transition all .3s
+  ol
+    margin-left 20px
+  .toc-title
+    color #7a7a7a
+    font-size 0.75rem
+  .toc-child
+    padding-left 0em
+
+  
+
 /* topic section */
 .toc-article
+  @media mq-mini
+    width 90%
+    margin .5em 0
+  @media mq-mobile
+    width 90%
+    margin .5em 0
   background #F9F9F9
   margin 2em 0 0 0.6em
   padding 1em
   border-radius 0px
-  width 20%
   .toc-title
     font-size 120%
   strong
@@ -397,7 +427,6 @@ ol.toc
 #toc
   line-height 1em
   font-size .85em
-  float right
   .toc
     padding 0
     li
@@ -428,6 +457,7 @@ ol.toc
     &:hover
       color color-theme
       transition color .3s ease-out
+
 
 /* right-to-left languages */
 .article.rtl
