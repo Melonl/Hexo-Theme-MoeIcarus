@@ -177,6 +177,9 @@ If you want to enable it, open `MoeIcarus\source\js\main.js` and uncomment the c
 
 ## ChangeLog
 
+**2020-08-09**
+* Added reading progress in toc card by showing colored titles
+
 **2020-07-09**
 * Added left-floating sticky toc card by a indirect way
 

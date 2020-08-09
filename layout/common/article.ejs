@@ -38,46 +38,7 @@
         <strong class="toc-title"><%= __('article.catalogue') %></strong>
           <%- toc(post.content) %>
         </div>
-        <script type="text/javascript">
-          //check media query
-          function setUpTocCard(){
-          var mq_mobile = window.matchMedia('(min-width: 560px) and (max-width: 799px)');
-          var mq_mini = window.matchMedia('(max-width: 559px)');
-          var mq_tablet = window.matchMedia('(min-width: 800px) and (max-width: 1199px)');
-          if(mq_mini.matches || mq_mobile.matches || mq_tablet.matches)return;
-  
-          $(".toc-card").html($("#toc").html());
-          $("#toc").remove();
-          $(".toc-card").css("display","block");
-
-          
-          
-
-          var lastDate = null;
-          var curDate;
-          var scrollH = -1;
-          var H = $(window).height();
-          var titles = $(".article-entry").children(":header");
-          console.log("titles:" + titles[0]);
-          $(window).scroll(function(){
-            curDate = new Date;
-            if(lastDate != null){
-              if(curDate - lastDate <= 25)
-                return;
-            }
-            lastDate = curDate;
-
-            scrollH = $(window).scrollTop();
-            var H = $(window).height();
-            console.log(scrollH + "," + H);
-            for(var i = 0;i < titles.length;++i){
-              //if(titles[i].offset().top <= (scrollH + H/2)
-                console.log("offset " + titles[i].offset().top + "," + i);
-            }
-          });
-        };
-        setUpTocCard();
-        </script>
+        <script src="/js/toc.js"> </script>
       <% } %>
       <%- post.more %>
     <% } %>
