@@ -174,6 +174,12 @@ If you want to enable it, open `MoeIcarus\source\js\main.js` and uncomment the c
 })(jQuery)
 
 ```
+## Todo list
+* Add line number of code
+* Perfect search feature
+* Add analytics plugins
+* Add more interesting pages
+...
 
 ## ChangeLog
 
