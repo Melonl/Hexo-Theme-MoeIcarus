@@ -79,15 +79,14 @@
     $(function() {
       // Init ScrollReveal Animate
       window.sr = new ScrollReveal();
-      window.sr.reveal('#profile', { viewFactor: 0, mobile: false });
+      //window.sr.reveal('#profile-inner', { viewFactor: 0, mobile: false });
       window.sr.reveal('article, .timeline, .layout-wrap', {
         reset: window.location.pathname === '/',
-        delay: 100,
-        useDelay: 'once',
+        scale: 0.9,
         viewFactor: 0,
         easing: 'ease-in-out'
       });
-      window.sr.reveal('#sidebar', { delay: 200, useDelay: 'once', viewFactor: 0 });
+      //window.sr.reveal('#sidebar', { delay: 200, useDelay: 'once', viewFactor: 0 });
     })
   </script>
   <%- partial('plugin/scripts', { isHead: true }) %>

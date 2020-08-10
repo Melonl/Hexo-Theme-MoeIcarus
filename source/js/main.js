@@ -91,8 +91,9 @@
   var mq_tablet = window.matchMedia('(min-width: 800px) and (max-width: 1199px)');
   if(mq_mini.matches || mq_mobile.matches || mq_tablet.matches)return;
     //console.log("mq-mini:" + mq_mini.matches + "mq-mobile:" + mq_mobile.matches);
-    console.log("jq onload");
+    
     $("#profile").height($("#outer").height());
+    //console.log("toc load, height: " + $("#profile").height());
   });
 
 })(jQuery)

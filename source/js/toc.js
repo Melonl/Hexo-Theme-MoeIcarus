@@ -18,17 +18,17 @@ function setUpTocCard() {
 
 	var io = new IntersectionObserver(function(entry) {
 		//print(entry[0].intersectionRatio);
-		var v = entry[0].target;
+		var v = $(entry[0].target);
 
 		if (entry[0].intersectionRatio == 1) {
-			print(v);
+			//print(v.text());
 			var flag = false;
 			toc.find(".toc-item").each(function(i, e) {
-				var e = $(e);
-				
+				e = $(e);
+				//print(e.children("a").text());
 				if (!flag) e.children("a").removeClass("toc-link").addClass("toc-link-visited");
 				else e.children("a").removeClass("toc-link-visited").addClass("toc-link");
-				if (e.children("a").text().indexOf(v.id) != -1) flag = true;
+				if (e.children("a").text().indexOf(v.text()) != -1) flag = true;
 			});
 		}
 	}, {
@@ -40,9 +40,10 @@ function setUpTocCard() {
 	//console.log(titles);
 
 };
-window.onload = function() {
+
+$(window).on("load",function(){
 	setUpTocCard();
-};
+});
 
 function print(s) {
 	console.log(s);
